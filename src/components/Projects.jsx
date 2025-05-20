@@ -1,7 +1,7 @@
 // src/components/Projects.jsx
 import React from "react";
 import { Card, Button, Row, Col, Container } from "react-bootstrap";
-import { projects } from "../data/projects"; // Achte auf den korrekten Pfad
+import { projects } from "../data/projects"; 
 
 const Projects = () => {
   return (
