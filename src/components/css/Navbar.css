@@ -1,0 +1,77 @@
+.custom-navbar {
+  background-color: #0d1b2a; /* dunkles, edles Marineblau */
+  min-height: 80px; /* Höhe der Navbar */
+  font-size: 20px; /* Textgröße */
+  color: white;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  border-bottom: 1px solid #1a2639;
+}
+
+
+
+.navbar-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.navbar-logo {
+  height: 40px;
+}
+
+.navbar-name {
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.navbar-center {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.nav-links .nav-link {
+  color: white !important;
+  margin: 0 10px;
+  font-weight: 500;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.custom-navbar .navbar-brand,
+.custom-navbar .nav-link,
+.custom-navbar .btn {
+  font-size: 18px;
+  color: white;
+}
+
+.custom-navbar .btn {
+  border: 1px solid white;
+  padding: 6px 14px;
+  transition: all 0.3s ease;
+}
+.custom-navbar .nav-link {
+  color: white;
+  transition: color 0.3s;
+}
+
+.custom-navbar .nav-link:hover {
+  color: #66ccff; /* schöner Hover-Farbton */
+}
+
+.custom-navbar .navbar-brand span {
+  font-size: 18px;
+  color: #ffffff;
+}
