@@ -5,6 +5,7 @@ import HeroSection from "./components/HeroSection";
 import AboutSection from './components/AboutSection';
 import Projects from './components/Projects';
 import ExperienceAndEducationSection from "./components/ExperienceAndEducationSection";
+import ContactSection from "./components/ContactSection";
 
 
 
@@ -16,6 +17,7 @@ function App() {
       <AboutSection />
       <Projects />
       <ExperienceAndEducationSection/>
+      <ContactSection />
     </>
   );
 }
