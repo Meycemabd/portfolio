@@ -1,42 +1,45 @@
 import React, { useRef } from 'react';
-import emailjs from '@emailjs/browser';
-import { FaGithub, FaLinkedin, FaEnvelope, FaXing, FaMicrophone } from 'react-icons/fa';
+import emailjs from '@emailjs/browser'; // Email sending service
+import { FaGithub, FaLinkedin, FaXing } from 'react-icons/fa'; // Social icons
+import '../components/css/ContactSection.css'; // Custom styles
 
+/**
+ * ContactSection Component
+ * Displays a contact form and social media links.
+ * Sends email via EmailJS on form submission.
+ */
 const ContactSection = () => {
-  const form = useRef();
+  const form = useRef(); // useRef to reference the form DOM element
 
+  // Handle form submission
   const sendEmail = async (e) => {
-    e.preventDefault();
+    e.preventDefault(); // Prevent page reload
+
     try {
+      // Send form data using EmailJS service
       await emailjs.sendForm(
-        'service_233jh5t',
-        'template_svi7nqa',
-        form.current,
-        'ojE6t1YZcJZpyEcqa'
+        'service_233jh5t',     // Service ID
+        'template_svi7nqa',    // Template ID
+        form.current,          // Form reference
+        'ojE6t1YZcJZpyEcqa'     // Public API key
       );
+
       alert('Message sent successfully!');
-      form.current.reset();
+      form.current.reset(); // Reset form after sending
     } catch (error) {
       alert('Failed to send the message. Please try again.');
     }
   };
 
   return (
-    <section style={{ backgroundColor: '#0a0f2c', padding: '80px 0' }}>
+    <section id="contact" className="contact-section">
       <div className="container">
-        <h2
-          className="fw-bold mb-5"
-          style={{
-            fontSize: '2.5rem',
-            color: '#00FF7F',
-            position: 'relative',
-            animation: 'slideRight 3s ease-in-out infinite alternate',
-          }}
-        >
-          Contact Me
-        </h2>
+        <h2 className="contact-title">Contact Me</h2>
 
+        {/* === Contact Form === */}
         <form ref={form} onSubmit={sendEmail} className="row g-4 text-light">
+          
+          {/* Name Field */}
           <div className="col-md-6">
             <input
               type="text"
@@ -47,6 +50,7 @@ const ContactSection = () => {
             />
           </div>
 
+          {/* Phone Number Field */}
           <div className="col-md-6">
             <input
               type="tel"
@@ -57,6 +61,7 @@ const ContactSection = () => {
             />
           </div>
 
+          {/* Email Field */}
           <div className="col-md-12">
             <input
               type="email"
@@ -67,6 +72,7 @@ const ContactSection = () => {
             />
           </div>
 
+          {/* Message Field */}
           <div className="col-md-12">
             <textarea
               name="message"
@@ -77,40 +83,47 @@ const ContactSection = () => {
             ></textarea>
           </div>
 
+          {/* Submit Button */}
           <div className="col-md-12 text-end">
-            <button type="submit" className="btn btn-success px-5">
+            <button type="submit" className="btn btn-primary px-5">
               Send Message
             </button>
           </div>
         </form>
 
-        {/* Social Icons + Footer */}
+        {/* === Social Media Links === */}
         <div className="text-center mt-5">
           <div className="d-flex justify-content-center gap-4 mb-3">
-            <a href="https://github.com/Meycemabd" target="_blank" rel="noreferrer" className="text-light fs-4">
+            <a
+              href="https://github.com/Meycemabd"
+              target="_blank"
+              rel="noreferrer"
+              className="text-light fs-4"
+            >
               <FaGithub />
             </a>
-            <a href="https://www.linkedin.com/in/meycemelabed/" target="_blank" rel="noreferrer" className="text-light fs-4">
+            <a
+              href="https://www.linkedin.com/in/meycemelabed/"
+              target="_blank"
+              rel="noreferrer"
+              className="text-light fs-4"
+            >
               <FaLinkedin />
             </a>
-            <a href="https://www.xing.com/profile/Meycem_ElAbed/web_profiles" target="_blank" rel="noreferrer" className="text-light fs-4">
+            <a
+              href="https://www.xing.com/profile/Meycem_ElAbed/web_profiles"
+              target="_blank"
+              rel="noreferrer"
+              className="text-light fs-4"
+            >
               <FaXing />
             </a>
           </div>
+
+          {/* Footer Text */}
           <p className="text-secondary">© Meycem El Abed 2025</p>
         </div>
       </div>
-
-      <style jsx>{`
-        @keyframes slideRight {
-          0% {
-            left: 0;
-          }
-          100% {
-            left: 15px;
-          }
-        }
-      `}</style>
     </section>
   );
 };

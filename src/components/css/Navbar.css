@@ -1,41 +1,29 @@
-.custom-navbar {
-  background-color: #0d1117;
-}
-
+/* Grundstil  */
 .custom-navbar .nav-link {
   color: #c9d1d9;
   font-weight: 500;
-  transition: color 0.3s ease;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
 }
+
 
 .custom-navbar .nav-link:hover,
 .custom-navbar .nav-link:focus {
   color: #00ff7f;
-  font-weight: 700;
-  text-decoration: none;
-  background: none;
-  outline: none;
+  border-bottom: 2px solid #00ff7f;
+  font-weight: 600;
 }
 
+/* Aktiver Link */
 .custom-navbar .nav-link:active {
   color: #ffffff;
-  font-weight: 700;
-  background: none;
-  outline: none;
+  border-bottom: 2px solid #ffffff;
 }
 
+ /* sichtbarer Unterstrich */
 .custom-navbar .nav-link:focus-visible {
-  outline: 2px solid #00ff7f;
-  outline-offset: 2px;
-  background: none;
+  outline: none;
+  border-bottom: 2px solid #00ff7f;
 }
-.navbar-nav {
-  padding-right: 20px;
-}
-.custom-navbar .collapse.navbar-collapse {
-  padding-right: 50px; 
-
-}
-

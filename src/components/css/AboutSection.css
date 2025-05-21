@@ -1,0 +1,57 @@
+/* Container Hintergrund + Padding */
+.about-section {
+  background-color: #0d1117;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  scroll-margin-top: 80px;
+}
+
+/* Überschrift grün mit Slide-Animation */
+.about-heading {
+  font-size: 2.5rem;
+  color: #00FF7F;
+  position: relative;
+  animation: slideRight 3s ease-in-out infinite alternate;
+}
+
+/* Animation: Slide nach rechts */
+@keyframes slideRight {
+  0% { left: 0; }
+  100% { left: 15px; }
+}
+
+/* Profilbild Größe + Rahmen */
+.about-profile {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border: 3px solid #00FF7F;
+  margin-top: 30px;
+}
+
+/* Beschreibungstext: Größe + Zeilenhöhe + Farbe */
+.about-description {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #c9d1d9;
+}
+
+/* Techniktitel: Farbe + Abstand + Fettschrift */
+.about-tech-title {
+  color: #00FF7F;
+  letter-spacing: 1px;
+  font-weight: bold;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Linke Spalte
+.left-col {
+  margin-left: -70px;
+}
+
+/* Rechte Spalte: Abstand oben + links */
+.right-col {
+  margin-top: 80px;
+  padding-left: 50px;
+}

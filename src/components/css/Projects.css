@@ -1,0 +1,62 @@
+/* Hintergrund & Padding des Projektbereichs */
+.projects-section {
+  background-color: #0a0f2c;
+  color: #c9d1d9;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+/* Überschrift grün mit Slide-Animation */
+.projects-heading {
+  font-size: 2.5rem;
+  color: #00ff7f;
+  font-weight: bold;
+  margin-bottom: 3rem;
+  position: relative;
+  animation: slideRight 3s ease-in-out infinite alternate;
+}
+
+/* Animation: Slide nach rechts */
+@keyframes slideRight {
+  0% { left: 0; }
+  100% { left: 15px; }
+}
+
+/* Einzelne Projekt-Karte Style */
+.project-card {
+  background-color: #1e2a38;
+  color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  height: 100%;
+}
+
+/* Projektbild Größe & Skalierung */
+.project-img {
+  object-fit: cover;
+  height: 180px;
+}
+
+/* Projekttitel grün */
+.project-title {
+  color: #00ff7f;
+}
+
+/* Abstand unter Projekt-Tags */
+.project-tags {
+  margin-bottom: 1rem;
+}
+
+/* Stil der Tag-Badges */
+.project-badge {
+  background-color: #495057;
+  margin-right: 0.25rem;
+  padding: 0.4em 0.6em;
+  border-radius: 0.25rem;
+  font-size: 0.8rem;
+}
+
+/* Button Schriftgewicht & Buchstabenabstand */
+.view-project-btn {
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
