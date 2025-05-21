@@ -1,30 +1,41 @@
 import React from 'react';
-import '../components/css/Navbar.css';
+import '../components/css/Navbar.css'; 
 
 const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg custom-navbar">
       <div className="container-fluid">
-        <a className="navbar-brand d-flex align-items-center" href="#">
-          {/*<img
-            src="/logo.png"
-            alt="Logo"
-            width="40"
-            height="40"
-            className="d-inline-block align-text-top me-2"
-          />
-          */}
-          <span className="fw-bold">Meycem</span>
+        <a
+          className="navbar-brand d-flex align-items-center"
+          href="#"
+          style={{ color: "#00FF7F", fontWeight: "700", fontSize: "1.5rem" }}
+        >
+          <span style={{ marginRight: "8px" }} role="img" aria-label="code">
+          <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#00ff7f"><path d="M320-242 80-482l242-242 43 43-199 199 197 197-43 43Zm318 2-43-43 199-199-197-197 43-43 240 240-242 242Z"/></svg> MeycemDev
+          </span>
         </a>
-        <div className="collapse navbar-collapse justify-content-center">
-          <ul className="navbar-nav mb-2 mb-lg-0 gap-3">
-            <li className="nav-item"><a className="nav-link" href="#about">About Me</a></li>
-            <li className="nav-item"><a className="nav-link" href="#projects">Projects</a></li>
-            <li className="nav-item"><a className="nav-link" href="#skills">Skills</a></li>
-            <li className="nav-item"><a className="nav-link" href="#contact">Contacts</a></li>
+        <div
+          className="collapse navbar-collapse justify-content-end"
+          style={{ paddingRight: "50px" }} 
+        >
+          <ul className="navbar-nav mb-2 mb-lg-0 gap-4">
+            <li className="nav-item">
+              <a className="nav-link" href="#about">
+                About Me
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#projects">
+                Projects
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#contact">
+                Contacts
+              </a>
+            </li>
           </ul>
         </div>
-        <button className="btn btn-outline-light">Hire Me</button>
       </div>
     </nav>
   );

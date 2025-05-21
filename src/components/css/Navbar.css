@@ -1,77 +1,41 @@
 .custom-navbar {
-  background-color: #0d1b2a; /* dunkles, edles Marineblau */
-  min-height: 80px; /* Höhe der Navbar */
-  font-size: 20px; /* Textgröße */
-  color: white;
-  padding-top: 0.8rem;
-  padding-bottom: 0.8rem;
-  border-bottom: 1px solid #1a2639;
+  background-color: #0d1117;
 }
 
-
-
-.navbar-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-}
-
-.navbar-left {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.navbar-logo {
-  height: 40px;
-}
-
-.navbar-name {
-  color: white;
-  font-weight: bold;
-  font-size: 20px;
-}
-
-.navbar-center {
-  display: flex;
-  justify-content: center;
-  flex-grow: 1;
-}
-
-.nav-links .nav-link {
-  color: white !important;
-  margin: 0 10px;
-  font-weight: 500;
-}
-
-.navbar-right {
-  display: flex;
-  align-items: center;
-}
-
-.custom-navbar .navbar-brand,
-.custom-navbar .nav-link,
-.custom-navbar .btn {
-  font-size: 18px;
-  color: white;
-}
-
-.custom-navbar .btn {
-  border: 1px solid white;
-  padding: 6px 14px;
-  transition: all 0.3s ease;
-}
 .custom-navbar .nav-link {
-  color: white;
-  transition: color 0.3s;
+  color: #c9d1d9;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
-.custom-navbar .nav-link:hover {
-  color: #66ccff; /* schöner Hover-Farbton */
+.custom-navbar .nav-link:hover,
+.custom-navbar .nav-link:focus {
+  color: #00ff7f;
+  font-weight: 700;
+  text-decoration: none;
+  background: none;
+  outline: none;
 }
 
-.custom-navbar .navbar-brand span {
-  font-size: 18px;
+.custom-navbar .nav-link:active {
   color: #ffffff;
+  font-weight: 700;
+  background: none;
+  outline: none;
 }
+
+.custom-navbar .nav-link:focus-visible {
+  outline: 2px solid #00ff7f;
+  outline-offset: 2px;
+  background: none;
+}
+.navbar-nav {
+  padding-right: 20px;
+}
+.custom-navbar .collapse.navbar-collapse {
+  padding-right: 50px; 
+
+}
+
