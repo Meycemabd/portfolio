@@ -1,5 +1,5 @@
 // src/data/projects.js
-import maintenaceImg from '../assets/maitenance.png';
+//import maintenaceImg from '../assets/maitenance.png';
 import bookingImg from '../assets/airbnb.png'
 import portfolioImg from '../assets/portfolio.png'
 import instagramImg from '../assets/insta.png'
