@@ -3,6 +3,7 @@
 import bookingImg from '../assets/airbnb.png'
 import portfolioImg from '../assets/portfolio.png'
 import instagramImg from '../assets/insta.png'
+import eyouStoreImg from '../assets/EyouStore.png'
 
 export const projects = [
     {
@@ -28,6 +29,14 @@ export const projects = [
       image: instagramImg,
       tags: ["React", "TypeScript", "Javascript", "Figma"],
       link: "https://github.com/Meycemabd/instagram-Clone-Web"
+    },
+    {
+      id: 3,
+      title: "Eyou Store  – E-Commerce App",
+      description: "Modern MERN-Stack web shop. Features include product search, filters, detail pages, and responsive design. Built with React, Node.js (Express & NestJS), MongoDB, Bootstrap and Redux.",
+      image: eyouStoreImg,
+      tags: ["React", "TypeScript", "Redux", "NestJS", "MongoDB"],
+      link: "https://github.com/Meycemabd/Ecommerce"
     }
   ];
   
