@@ -20,7 +20,7 @@ export const projects = [
       description: "A responsive portfolio website for MeycemDev, built with React, Bootstrap, and an Express backend. It showcases projects and skills in a clean layout and includes a contact form for easy communication.",
       image: portfolioImg,
       tags: ["React", "Bootstrap", "Javascript", "Jest"],
-      link: "https://github.com/Meycemabd/portfolio"
+      link: "https://meycemportfolio.netlify.app/"
     },
     {
       id: 3,
@@ -35,8 +35,8 @@ export const projects = [
       title: "Eyou Store  – E-Commerce App",
       description: "Modern MERN-Stack web shop. Features include product search, filters, detail pages, and responsive design. Built with React, Node.js (Express & NestJS), MongoDB, Bootstrap and Redux.",
       image: eyouStoreImg,
-      tags: ["React", "TypeScript", "Redux", "NestJS", "MongoDB"],
-      link: "https://github.com/Meycemabd/Ecommerce"
+      tags: ["React", "TypeScript", "Redux", "Bootstrap", "Node.js","axios"],
+      link: "https://eyoustoree.netlify.app/"
     }
   ];
   
