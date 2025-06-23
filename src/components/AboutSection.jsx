@@ -41,7 +41,7 @@ const AboutSection = () => {
             <p className="about-description">
               I'm a dedicated
               <span style={{ color: '#00FF7F', fontWeight: '600' }}>
-                {' '}Junior Fullstack developer
+                {' '}Junior Web developer
               </span>
               {' '}who loves crafting clean, efficient code and bringing ideas to life from user friendly frontend experiences to robust backend solutions. <br />
               I’m passionate about learning new technologies and continuously improving my skills to deliver high-quality software that truly makes a difference.
