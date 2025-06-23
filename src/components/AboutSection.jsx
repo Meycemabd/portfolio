@@ -15,10 +15,6 @@ import { VscVscode } from 'react-icons/vsc';
 
 import '../components/css/AboutSection.css';
 
-/**
- * AboutSection component | Provides personal introduction and tech stack overview
- * Includes a profile image, short bio, and icons for technologies used
- */
 const AboutSection = () => {
   return (
     <section id="about" className="about-section">

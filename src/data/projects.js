@@ -35,7 +35,7 @@ export const projects = [
       title: "Eyou Store  – E-Commerce App",
       description: "Modern MERN-Stack web shop. Features include product search, filters, detail pages, and responsive design. Built with React, Node.js (Express & NestJS), MongoDB, Bootstrap and Redux.",
       image: eyouStoreImg,
-      tags: ["React", "TypeScript", "Redux", "Bootstrap", "Node.js","axios"],
+      tags: ["React", "TypeScript", "Redux", "Bootstrap", "Node.js"],
       link: "https://eyoustoree.netlify.app/"
     }
   ];
